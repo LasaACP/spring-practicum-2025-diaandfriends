@@ -1,0 +1,5 @@
+C:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/cmake-build-debug/CMakeFiles/compressor.dir
+C:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/cmake-build-debug/CMakeFiles/compressorTests.dir
+C:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,21 @@
+Dia adjusted her worn leather jacket, the Indiana wind whipping through the cornfields stretching out before her.  The static on her portable radio crackled, spitting out the garbled voice of Gabriel, her perpetually-wired coding partner.
+
+"Dia! Dia!  Compression algorithm's got, like, major structural integrity issues, dude.  Huffman tree's spitting out gibberish.  Seriously, I think it's trying to tell me to buy more Mountain Dew."
+
+Dia sighed. Gabriel, a junior suffering from a particularly aggressive case of computer science brainrot, had a talent for exaggeration.  He was probably just staring at a rogue semicolon.
+
+"Gabriel, breathe. Have you…have you checked the frequency tables?  Is the priority queue even functioning?" Dia asked, meticulously sketching a Huffman tree diagram in her worn notebook.
+
+The radio buzzed again, this time with a quieter, almost frantic, tone. It was Nolan.
+
+"Dia...Gabriel...I...I think I've found a flaw in the asymptotic complexity analysis of the Huffman algorithm when applied to extremely large datasets... It invalidates several sections of the WAP syllabus, and I'm not sure I'm ready to re-memorize the entire thing!"  Nolan's voice wavered on the edge of hysteria.
+
+Dia rolled her eyes.  Nolan, forever buried in his "WAP" (his nickname for whatever incredibly difficult subject he was currently obsessing over), was always on the verge of a theoretical breakdown.  His dedication was admirable, but sometimes…exhausting.
+
+"Nolan, deep breaths.  It's probably a corner case.  Just run some tests, and if it holds up, we can figure it out.  Besides, WAP is just one exam.  Focus on debugging this compression program, we're on a deadline."
+
+"But...the algorithmic complexity...the optimal encoding!"  Nolan mumbled something about Karatsuba algorithm variants and logarithmic runtimes before abruptly cutting off.
+
+Dia shook her head.  This was going to be a long night. The compression and decompression program, lovingly (and sometimes not-so-lovingly) nicknamed "The Hoosier Huff," was their ticket to the regional coding competition. It had to work.
+
+She plugged in her laptop, the screen reflecting the golden twilight over the Indiana fields.  Time to dive into the code, navigate Gabriel's caffeine-fueled logic, and try to ground Nolan's theoretical anxieties.  Indiana might be known for its corn, but tonight, it was going to be known for its damn efficient Huffman compression.  Or at least, Dia was going to make sure it was.  She cracked her knuckles, and typed:
