@@ -3,3 +3,9 @@
 //
 
 #include "huffman.h"
+#include <iostream>
+#include <cstdlib>
+#include <map>
+
+using namespace std;
+

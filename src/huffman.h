@@ -6,8 +6,15 @@
 #define HUFFMAN_H
 
 
+struct node {
+    node* next;
+    char value;
+}
+
 
 class huffman {
+    public:
+        node* head;
 
 };
 
