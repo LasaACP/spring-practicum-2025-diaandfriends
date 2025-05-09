@@ -9,7 +9,7 @@
 struct node {
     node* next;
     char value;
-}
+};
 
 
 class huffman {

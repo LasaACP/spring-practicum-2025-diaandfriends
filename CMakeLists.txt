@@ -13,6 +13,8 @@ add_executable(compressor
         src/huffman.cpp
         src/huffman.h
         src/hashing.cpp
+        src/frequencyCounter.cpp
+        src/frequencyCounter.h
         src/hashing.h
         src/readFile.cpp
         src/readFile.h
@@ -27,6 +29,8 @@ add_executable(compressorTests
         src/huffman.h
         src/hashing.cpp
         src/hashing.h
+        src/frequencyCounter.cpp
+        src/frequencyCounter.h
         main_test.cpp
         src/readFile.cpp
         src/readFile.h

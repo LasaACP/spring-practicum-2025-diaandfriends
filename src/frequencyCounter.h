@@ -1,21 +1,9 @@
-//
-// Created by jlozi on 5/7/2025.
-//
-
-#ifndef frequencyCounter_H
-#define frequencyCounter_H
-
 #include <map>
-
-using namespace std;
-
+#include <vector>
+#include <string>
 
 class frequencyCounter {
-    public:
-        map<char, int> count(string path);
-        map<char, int> sort(map<char, int> freq);
+public:
+    std::map<char, int> count(const std::string& path);
+    std::vector<std::pair<char, int> > sorter(const std::map<char, int>& freq);
 };
-
-
-
-#endif //frequencyCounter_H

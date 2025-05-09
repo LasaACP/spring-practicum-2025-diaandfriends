@@ -1,38 +1,33 @@
 #include "frequencyCounter.h"
-#include <iostream>
 #include <fstream>
-#include <map>
-#include <string>
-#include <cctype>
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
-using namespace std;
+std::map<char, int> frequencyCounter::count(const std::string& path) {
+    std::ifstream file(path);
+    std::map<char, int> freq;
 
-// loop through entire file one by one
-// incremeent frequency in map
-// sort into set at the end depending on frequency
-map<char, int> count(string path)
-{
-    map<char, int> freq;
-    for(int i = 0; i<path.length; i++)
-    {
-        freq[path[i]]+=1;
-    } 
-    return freq;   
-}
+    if (!file) {
+        std::cerr << "Could not open file: " << path << std::endl;
+        return freq;
+    }
 
-map<char, int> sorter(map<char, int> freq)
-{
-    vector<pair<char, int>> sorted(freq.begin(), freq.end());
+    char ch;
+    while (file.get(ch)) {
+        freq[ch]++;
+    }
 
-    sort(sorted.begin(), sorted.end(), [](auto& a, auto& b) {
-        return a.second > b.second;
-    });
     return freq;
 }
 
-    
-    
-    
+std::vector<std::pair<char, int>> frequencyCounter::sorter(const std::map<char, int>& freq) {
+    std::vector<std::pair<char, int>> vec(freq.begin(), freq.end());
 
+    std::sort(vec.begin(), vec.end(),
+              [](const std::pair<char, int>& a, const std::pair<char, int>& b) {
+                  return a.second > b.second;
+              });
+
+    return vec;
+}
