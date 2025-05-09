@@ -79,6 +79,12 @@ build CMakeFiles/compressor.dir/src/hashing.cpp.obj: CXX_COMPILER__compressor_un
   OBJECT_DIR = CMakeFiles\compressor.dir
   OBJECT_FILE_DIR = CMakeFiles\compressor.dir\src
 
+build CMakeFiles/compressor.dir/src/readFile.cpp.obj: CXX_COMPILER__compressor_unscanned_Debug C$:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/src/readFile.cpp || cmake_object_order_depends_target_compressor
+  DEP_FILE = CMakeFiles\compressor.dir\src\readFile.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\compressor.dir
+  OBJECT_FILE_DIR = CMakeFiles\compressor.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target compressor
@@ -87,7 +93,7 @@ build CMakeFiles/compressor.dir/src/hashing.cpp.obj: CXX_COMPILER__compressor_un
 #############################################
 # Link the executable compressor.exe
 
-build compressor.exe: CXX_EXECUTABLE_LINKER__compressor_Debug CMakeFiles/compressor.dir/main.cpp.obj CMakeFiles/compressor.dir/src/compressor.cpp.obj CMakeFiles/compressor.dir/src/decompressor.cpp.obj CMakeFiles/compressor.dir/src/huffman.cpp.obj CMakeFiles/compressor.dir/src/hashing.cpp.obj
+build compressor.exe: CXX_EXECUTABLE_LINKER__compressor_Debug CMakeFiles/compressor.dir/main.cpp.obj CMakeFiles/compressor.dir/src/compressor.cpp.obj CMakeFiles/compressor.dir/src/decompressor.cpp.obj CMakeFiles/compressor.dir/src/huffman.cpp.obj CMakeFiles/compressor.dir/src/hashing.cpp.obj CMakeFiles/compressor.dir/src/readFile.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\compressor.dir
@@ -136,6 +142,12 @@ build CMakeFiles/compressorTests.dir/main_test.cpp.obj: CXX_COMPILER__compressor
   OBJECT_DIR = CMakeFiles\compressorTests.dir
   OBJECT_FILE_DIR = CMakeFiles\compressorTests.dir
 
+build CMakeFiles/compressorTests.dir/src/readFile.cpp.obj: CXX_COMPILER__compressorTests_unscanned_Debug C$:/Users/jlozi/Documents/Github/LasaCS/AdvancedCS/compressor/src/readFile.cpp || cmake_object_order_depends_target_compressorTests
+  DEP_FILE = CMakeFiles\compressorTests.dir\src\readFile.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\compressorTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\compressorTests.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target compressorTests
@@ -144,7 +156,7 @@ build CMakeFiles/compressorTests.dir/main_test.cpp.obj: CXX_COMPILER__compressor
 #############################################
 # Link the executable compressorTests.exe
 
-build compressorTests.exe: CXX_EXECUTABLE_LINKER__compressorTests_Debug CMakeFiles/compressorTests.dir/src/compressor.cpp.obj CMakeFiles/compressorTests.dir/src/decompressor.cpp.obj CMakeFiles/compressorTests.dir/src/huffman.cpp.obj CMakeFiles/compressorTests.dir/src/hashing.cpp.obj CMakeFiles/compressorTests.dir/main_test.cpp.obj
+build compressorTests.exe: CXX_EXECUTABLE_LINKER__compressorTests_Debug CMakeFiles/compressorTests.dir/src/compressor.cpp.obj CMakeFiles/compressorTests.dir/src/decompressor.cpp.obj CMakeFiles/compressorTests.dir/src/huffman.cpp.obj CMakeFiles/compressorTests.dir/src/hashing.cpp.obj CMakeFiles/compressorTests.dir/main_test.cpp.obj CMakeFiles/compressorTests.dir/src/readFile.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\compressorTests.dir

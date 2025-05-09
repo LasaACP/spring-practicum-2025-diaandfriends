@@ -14,6 +14,8 @@ add_executable(compressor
         src/huffman.h
         src/hashing.cpp
         src/hashing.h
+        src/readFile.cpp
+        src/readFile.h
 )
 
 add_executable(compressorTests
@@ -26,6 +28,8 @@ add_executable(compressorTests
         src/hashing.cpp
         src/hashing.h
         main_test.cpp
+        src/readFile.cpp
+        src/readFile.h
 )
 
 add_test(NAME compressorTestsExe
