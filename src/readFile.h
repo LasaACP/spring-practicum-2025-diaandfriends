@@ -6,6 +6,7 @@ using namespace std;
 
 class readFile {
     static string read(string const& path);
+    static string readBinary(string const& path);
 };
 
 #endif //READFILE_H
