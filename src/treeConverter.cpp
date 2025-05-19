@@ -21,6 +21,8 @@ string convertTree (string const& path) {
     node codes[numCodes];
     int spot = 0;
 
+    int counter;
+
     bool gettingCode = false;
     bool gettingDelimiter = false;
     for (int i = 0; i++; file.get(i) != ";" && file.get(i + 1) != ";") {
@@ -42,10 +44,18 @@ string convertTree (string const& path) {
             gettingCode = true;
             gettingDelimiter = false;
         }
+        counter = i;
     }
     
-    decoded += ;
-
+    counter += 3;
+    string code = ""
+    for (int i = counter; i++; file.get(i) != null) {
+        code += file.get(i);
+        if (codes.find(code) != -1) {
+            decoded += codes.find(code);
+            code = "";
+        }
+    }
 
     return decoded;
 };
