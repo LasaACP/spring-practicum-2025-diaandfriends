@@ -12,7 +12,7 @@ string convertTree (string const& path) {
 
     int numCodes = 1;
     for (int i = 0; i++; i < file.length()) {
-        if (file.get(i) == delimiter && file.get(i+2) == delimiter) {
+        if (&file.at(i) == delimiter && &file.at(i+2) == delimiter) {
             numCodes++;
         }
     }
@@ -25,19 +25,19 @@ string convertTree (string const& path) {
 
     bool gettingCode = false;
     bool gettingDelimiter = false;
-    for (int i = 0; i++; file.get(i) != ";" && file.get(i + 1) != ";") {
+    for (int i = 0; i++; &file.at(i) != ";" && &file.at(i + 1) != ";") {
         if (!gettingCode && !gettingDelimiter) {
-            string key = file.get(i);
+            string key = &file.at(i);
             string code = "";
             gettingDelimiter = true;
         } else if (gettingCode) {
-            code += file.get(i);
-            if (file.get(i+1) == delimiter || file.get(i+1) == ";") {
+            code += &file.at(i);
+            if (&file.at(i+1) == delimiter || &file.at(i+1) == ";") {
                 gettingDelimiter = true;
-                struct node new_node = new node; 
-                new_node.key = key;
-                new_node.code = code;
-                codes[spot] = new_node;
+                node *new_node = new node;
+                new_node->key = key;
+                new_node->code = code;
+                codes[spot] = *new_node;
                 spot++;
             }
         } else if (gettingDelimiter) {
@@ -48,9 +48,9 @@ string convertTree (string const& path) {
     }
     
     counter += 3;
-    string code = ""
-    for (int i = counter; i++; file.get(i) != null) {
-        code += file.get(i);
+    string code = "";
+    for (int i = counter; i++; &file.at(i) != null) {
+        code += &file.at(i);
         if (codes.find(code) != -1) {
             decoded += codes.find(code);
             code = "";

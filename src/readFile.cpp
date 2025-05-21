@@ -16,7 +16,7 @@ string readFile::read(string const& path) {
 }
 
 
-char readFile::readBinary(string const& path) {
+std::istreambuf_iterator<char> readFile::readBinary(string const &path) {
     std::ifstream stream(path);
 
     return std::istreambuf_iterator<char>(stream);

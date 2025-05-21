@@ -9,7 +9,7 @@
 
 class head {
     public:
-        static unsigned char generate(std::string const &path);
+        static std::string generate(std::string const &path);
 };
 
 

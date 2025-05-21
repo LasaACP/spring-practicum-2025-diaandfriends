@@ -4,24 +4,25 @@
 
 #include "head.h"
 
-#include "frequencyCounter.cpp"
+#include <iostream>
+#include <sstream>
 
-unsigned char head::generate(std::string const &path) {
+#include "frequencyCounter.h"
+
+std::string head::generate(std::string const &path) {
      std::vector<std::pair<char, int>> chars = frequencyCounter::sorter(frequencyCounter::count(path));
 
-    unsigned char buffer[chars.size() * 4 + 1];
+    std::stringstream ss;
 
-     for (int i = 0; i < chars.size(); i++) {
-         std::cout << chars[i].first;
+    for (size_t i = 0; i < chars.size(); ++i) {
+        ss << chars[i].first << ":" << chars[i].second << ":";
+    }
 
-         buffer[i * 4] = chars[i].first;
-         buffer[i * 4 + 1] = ':';
-         buffer[i * 4 + 2] = chars[i].second;
-         buffer[i * 4 + 3] = ':';
-     }
+    std::string result = ss.str();
+    if (!result.empty()) {
+        result.pop_back();
+        result += ";;";
+    }
 
-    buffer[chars.size() * 4 - 4] = ';';
-    buffer[chars.size() * 4 - 3] = ';';
-
-    return *buffer;
+    return result;
 }
